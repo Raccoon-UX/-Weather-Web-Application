@@ -1,12 +1,13 @@
-Project Structure
+### ⚙️ Project Structure
 
+```
+.
 ├── index.html       // Main structure of the application
-
 ├── style.css        // All visual styling, including dynamic background animations
-
 └── script.js        // Core JavaScript logic, API fetching, and UI updates
+└── package.json     // (Optional, project metadata)
+```
 
-└── package.json     // (Optional, project metadata).
 
 # - 🌤 Dynamic Weather-Web-Application
 This is Weather Web Application developed using HTML, CSS, and Vanilla JavaScript. The application fetches and displays real-time weather information such as temperature, humidity, wind speed, and the city’s local time. It features a clean, responsive, card-based UI with dynamic backgrounds that adapt based on current weather conditions and time.
@@ -63,12 +64,3 @@ The application will open in your default web browser.
 2.  Click **"Get Weather"** or press **Enter**.
 3.  The application will display the current conditions and dynamically update the background\!
 
-### ⚙️ Project Structure
-
-```
-.
-├── index.html       // Main structure of the application
-├── style.css        // All visual styling, including dynamic background animations
-└── script.js        // Core JavaScript logic, API fetching, and UI updates
-└── package.json     // (Optional, project metadata)
-```

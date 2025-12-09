@@ -1,8 +1,11 @@
 Project Structure
-.
+
 ├── index.html       // Main structure of the application
+
 ├── style.css        // All visual styling, including dynamic background animations
+
 └── script.js        // Core JavaScript logic, API fetching, and UI updates
+
 └── package.json     // (Optional, project metadata)
 
 # - 🌤 Dynamic Weather-Web-Application

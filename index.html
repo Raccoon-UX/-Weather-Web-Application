@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <h1 class="title">Weather Forecast</h1>
+      
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="searchBtn">Get Weather</button>
+      </div>
+
+      <div id="errorMessage" class="error-message"></div>
+
+      <div id="weatherDisplay" class="weather-display hidden">
+        <div class="location">
+          <h2 id="cityName">--</h2>
+          <p id="country">--</p>
+        </div>
+
+        <div class="main-weather">
+          <div id="weatherIcon" class="weather-icon">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </div>
+          <div class="temperature">
+            <span id="tempValue">--</span>
+            <span class="degree">°C</span>
+          </div>
+          <p id="weatherCondition" class="condition">--</p>
+          <div class="local-time">
+            <p id="localTime" class="time-value">--:-- --</p>
+            <p id="localDate" class="date-value">--, -- ---</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+            <div>
+              <p class="detail-label">Humidity</p>
+              <p id="humidity" class="detail-value">--%</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
+            </svg>
+            <div>
+              <p class="detail-label">Wind Speed</p>
+              <p id="windSpeed" class="detail-value">-- km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="loadingSpinner" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Fetching weather data...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
